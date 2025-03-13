@@ -1,0 +1,19 @@
+RewriteEngine On
+
+# Force HTTPS for all traffic
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Custom error pages
+ErrorDocument 400 /error_pages/400.php
+ErrorDocument 401 /error_pages/401.php
+ErrorDocument 403 /error_pages/403.php
+ErrorDocument 404 /error_pages/404.php
+ErrorDocument 410 /error_pages/410.php
+ErrorDocument 500 /error_pages/500.php
+
+# Keep-alive header
+Header set Connection keep-alive
+
+# Cache manifest type
+AddType text/cache-manifest .manifest
