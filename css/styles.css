@@ -164,14 +164,27 @@ h2 {
   text-align: center;
 }
 
-.author {
+h3 {
+  font-family: "Franklin Gothic", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.author, .supplementary {
   font-family: "JetBrains Mono", sans-serif;
   font-size: 13px;
   line-height: 1.4;
   text-align: center;
 }
 
-.author strong {
+.author, supplementary strong {
   font-weight: 700;
 }
 
