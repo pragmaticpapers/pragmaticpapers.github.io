@@ -259,6 +259,7 @@ a:hover {
   font-family: "Franklin Gothic", sans-serif;
   font-size: 22px;
   color: #333;
+  line-height: 1.25;
 }
 
 .articleinfoshort:hover {
@@ -270,6 +271,7 @@ a:hover {
   font-family: sans-serif;
   font-size: 14px;
   color: #333;
+  padding-top: 5px;
 }
 
 /* Override a style for other stuff */
@@ -328,11 +330,46 @@ a.logolink {
     font-family: "Franklin Gothic", sans-serif;
     font-size: 22px;
     color: #333;
+    line-height: 1.25;
   }
 
   .articleinfolong {
     font-family: sans-serif;
     font-size: 14px;
     color: #333;
+    padding-top: 5px;
   }
+}
+
+.image-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+.caption {
+  display: block;
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 0.8em;
+  line-height: 1.4;
+  margin-top: 10px;
+  color: #555;
+}
+
+h3 {
+  font-family: "Franklin Gothic", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 400;
 }
