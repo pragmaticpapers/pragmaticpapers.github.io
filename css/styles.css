@@ -156,12 +156,52 @@ header {
   }
 }
 
+h1 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #00ff;
+  color: transparent;
+  font-family: sans-serif;
+  font-size: 9.5vw;
+  line-height: 0.80597;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+
+@media (min-width: 760px) {
+  h1 {
+    -webkit-text-stroke-width: 2px;
+  }
+}
+
 h2 {
   font-family: "Franklin Gothic", sans-serif;
   line-height: 1.2;
   font-size: 38px;
   letter-spacing: 0;
   text-align: center;
+}
+
+h2.htitle {
+  font-family: "Harriet Text", serif;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.18px;
+  text-align: left;
+}
+
+h2.htitle:hover {
+  color: #00ff;
+  transition: color 0.2s ease-in-out;
+}
+
+h2.volumestitle {
+  font-size: 32px;
+  text-align: left;
+  letter-spacing: -0.18px;
+  font-weight: 700;
+  line-height: 1.6;
 }
 
 h3 {
@@ -177,14 +217,52 @@ h4 {
   font-weight: 600;
 }
 
-.author, .supplementary {
+.volumes {
+  width: 75%;
+  margin: auto;
+}
+
+.volume {
+  padding-top: 2rem;
+}
+
+.volumeinfo {
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 12px;
+  line-height: 1.16667;
+  color: inherit;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.volumetitle {
+  text-transform: uppercase;
+  margin-right: 0.3em;
+}
+
+.volumedate {
+  color: #00ff;
+}
+
+.volumedescription {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #666;
+  margin-top: 14px;
+  min-height: 4em;
+}
+
+.author,
+.supplementary {
   font-family: "JetBrains Mono", sans-serif;
   font-size: 13px;
   line-height: 1.4;
   text-align: center;
 }
 
-.author, supplementary strong {
+.author strong,
+.supplementary strong {
   font-weight: 700;
 }
 
@@ -197,6 +275,114 @@ h4 {
   margin-top: 40px;
   margin-bottom: 40px;
   width: 50%;
+}
+
+.squigglestatic {
+  width: 100%;
+  height: 3px;
+  margin-top: 1.5em;
+  background-size: auto 3px;
+  background-repeat: repeat-x;
+  background-position: 100% 100%;
+  position: relative;
+  background-image: url("/assets/squiggle-static.svg");
+  display: block;
+}
+
+.edition {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+code,
+pre,
+.codelike {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 15px;
+}
+
+/* Global box-sizing to avoid padding/border issues */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.articlescontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; /* Increased gap for better spacing on desktop */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Default: Desktop layout (2 articles per row) */
+.article {
+  flex-basis: calc(50% - 24px); /* Two articles per row with bigger gap */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image styling */
+.articlephoto {
+  width: 100%;
+  height: 300px; /* Fixed height for images to be the same height on desktop */
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articlephoto img {
+  width: 100%;
+  height: 100%; /* Ensure the image takes up full space of the container */
+  object-fit: cover; /* Preserve aspect ratio while filling the container */
+  border-radius: 6px;
+}
+
+/* Ensure the <a> tag doesn't break plex layout */
+.article-link {
+  display: contents;
+}
+
+/* Article info */
+.articleinfo {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+/* Info container */
+.articleinfotop {
+  display: flex;
+  flex-direction: column;
+}
+
+.articleinfoshort {
+  font-family: "Franklin Gothic", sans-serif;
+  font-size: 22px;
+  color: #333;
+  line-height: 1.25;
+}
+
+.articleinfoshort:hover {
+  color: #00ff;
+  transition: color 0.2s ease-in-out;
+}
+
+.articleinfolong {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #333;
+  padding-top: 5px;
+}
+
+/* Override a style for other stuff */
+a.article-link {
+  text-decoration: none;
+  outline: 0;
 }
 
 .image-container {
@@ -233,7 +419,7 @@ a {
 }
 
 a:hover {
-  box-shadow: inset 0 -11px 0 0 rgb(113, 113, 255);
+  box-shadow: inset 0 -11px 0 0 #7171ff;
 }
 
 a.logolink {
@@ -241,6 +427,91 @@ a.logolink {
   cursor: pointer;
 }
 
+/* Mobile layout */
+@media (max-width: 768px) {
+  .articlescontainer {
+    display: flex;
+    flex-direction: column; /* Ensure articles stack vertically */
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: row; /* Arrange image and text in a row */
+    align-items: center;
+    flex-basis: 100%; /* Ensure each article takes the full width */
+  }
+
+  .articlephoto {
+    flex: 0 0 30%; /* Image takes 30% width */
+    height: 120px; /* Adjust height */
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .articlephoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .articleinfo {
+    flex: 0 0 70%; /* Text takes 70% width */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .articleinfoshort {
+    font-family: "Franklin Gothic", sans-serif;
+    font-size: 22px;
+    color: #333;
+    line-height: 1.25;
+  }
+
+  .articleinfolong {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #333;
+    padding-top: 5px;
+  }
+}
+
 samp {
   display: block;
+}
+
+sup {
+  font-size: 80%;
+  line-height: 1;
+}
+
+sup a {
+  all: unset;
+  cursor: pointer;
+  color: #00f;
+}
+
+sup a:hover {
+  box-shadow: none;
+}
+
+#footnotes {
+  font-size: 0.85em;
+}
+
+#footnotes ol {
+  list-style-type: decimal;
+}
+
+#footnotes a {
+  all: unset;
+  cursor: pointer;
+  color: #00f;
 }
