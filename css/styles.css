@@ -1,3 +1,10 @@
+:root {
+  --brand-color: #0080ff;
+  --light-brand-color: #56b0ff;
+  --body-color: #131313;
+  --caption-color: #444;
+}
+
 @font-face {
   font-family: "Harriet Text";
   font-style: normal;
@@ -135,7 +142,7 @@ body {
   margin: auto;
   max-width: 750px;
   padding: 20px;
-  color: #131313;
+  color: var(--body-color);
 }
 
 .logo {
@@ -158,7 +165,7 @@ header {
 
 h1 {
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #00ff;
+  -webkit-text-stroke-color: var(--brand-color);
   color: transparent;
   font-family: sans-serif;
   font-size: 9.5vw;
@@ -192,16 +199,8 @@ h2.htitle {
 }
 
 h2.htitle:hover {
-  color: #00ff;
+  color: var(--brand-color);
   transition: color 0.2s ease-in-out;
-}
-
-h2.volumestitle {
-  font-size: 32px;
-  text-align: left;
-  letter-spacing: -0.18px;
-  font-weight: 700;
-  line-height: 1.6;
 }
 
 h3 {
@@ -241,14 +240,14 @@ h4 {
 }
 
 .volumedate {
-  color: #00ff;
+  color: var(--brand-color);
 }
 
 .volumedescription {
   font-family: sans-serif;
   font-size: 14px;
   line-height: 1.28571;
-  color: #666;
+  color: var(--caption-color);
   margin-top: 14px;
   min-height: 4em;
 }
@@ -363,19 +362,19 @@ pre,
 .articleinfoshort {
   font-family: "Franklin Gothic", sans-serif;
   font-size: 22px;
-  color: #333;
+  color: var(--caption-color);
   line-height: 1.25;
 }
 
 .articleinfoshort:hover {
-  color: #00ff;
+  color: var(--brand-color);
   transition: color 0.2s ease-in-out;
 }
 
 .articleinfolong {
   font-family: sans-serif;
   font-size: 14px;
-  color: #333;
+  color: var(--caption-color);
   padding-top: 5px;
 }
 
@@ -408,18 +407,18 @@ a.article-link {
   font-size: 0.8em;
   line-height: 1.4;
   margin-top: 10px;
-  color: #555;
+  color: var(--caption-color);
 }
 
 a {
-  box-shadow: inset 0 -2px 0 0 #00f;
+  box-shadow: inset 0 -2px 0 0 var(--brand-color);
   text-decoration: none;
   color: inherit;
   transition: box-shadow 0.2s ease-out;
 }
 
 a:hover {
-  box-shadow: inset 0 -11px 0 0 #7171ff;
+  box-shadow: inset 0 -11px 0 0 var(--light-brand-color);
 }
 
 a.logolink {
@@ -471,14 +470,14 @@ a.logolink {
   .articleinfoshort {
     font-family: "Franklin Gothic", sans-serif;
     font-size: 22px;
-    color: #333;
+    color: var(--caption-color);
     line-height: 1.25;
   }
 
   .articleinfolong {
     font-family: sans-serif;
     font-size: 14px;
-    color: #333;
+    color: var(--caption-color);
     padding-top: 5px;
   }
 }
@@ -495,7 +494,7 @@ sup {
 sup a {
   all: unset;
   cursor: pointer;
-  color: #00f;
+  color: var(--brand-color);
 }
 
 sup a:hover {
@@ -513,5 +512,30 @@ sup a:hover {
 #footnotes a {
   all: unset;
   cursor: pointer;
-  color: #00f;
+  color: var(--brand-color);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #e9e9e9;
+    background: #0c0c0c;
+  }
+
+  .articleinfoshort {
+    color: #e9e9e9;
+  }
+
+  .articleinfolong {
+    color: #e9e9e9;
+  }
+
+  .caption {
+    color: #9d9d9d;
+  }
+
+  .volumedescription {
+    color: #9d9d9d;
+  }
+
 }
