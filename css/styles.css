@@ -522,6 +522,10 @@ sup a:hover {
     background: #0c0c0c;
   }
 
+  h1 {
+    -webkit-text-stroke-color: var(--light-brand-color);
+  }
+
   .articleinfoshort {
     color: #e9e9e9;
   }
@@ -536,6 +540,10 @@ sup a:hover {
 
   .volumedescription {
     color: #9d9d9d;
+  }
+
+  .volumedate {
+    color: var(--light-brand-color);
   }
 
 }
