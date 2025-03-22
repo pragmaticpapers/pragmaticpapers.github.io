@@ -146,7 +146,7 @@ body {
 }
 
 .logo {
-  max-height: 20px; /* Small size for smaller screens */
+  max-height: 85px; /* Small size for smaller screens */
   margin: 0 auto;
 }
 
@@ -159,7 +159,7 @@ header {
 /* Media query for larger screens (e.g., screens wider than 768px) */
 @media (min-width: 768px) {
   .logo {
-    max-height: 35px; /* Normal size for larger screens */
+    max-height: 115px; /* Normal size for larger screens */
   }
 }
 
