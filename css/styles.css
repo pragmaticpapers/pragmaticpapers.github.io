@@ -279,7 +279,7 @@ a.article-link {
 
 .caption {
   display: block;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.8em;
   line-height: 1.4;
   margin-top: 10px;
@@ -379,6 +379,7 @@ sup a:hover {
 
 #footnotes {
   font-size: 0.85em;
+  font-family: "Inter", sans-serif;
 }
 
 #footnotes ol {
