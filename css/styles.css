@@ -25,6 +25,16 @@ body {
   margin: 0 auto;
 }
 
+/* Since Apple sucks at updating its browser (Safari doesn't support
+@media within SVGs), a workaround is needed for now. */
+@supports (-webkit-line-snap: baseline) {
+  @media (prefers-color-scheme: dark) {
+    img.logo {
+      content: url("/assets/pragmaticpapers-safari.svg");
+    }
+  }
+}
+
 header {
   text-align: center;
   margin-bottom: 2.5rem;
