@@ -42,7 +42,7 @@ h1 {
   -webkit-text-stroke-color: var(--brand-color);
   color: transparent;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 9.5vw;
+  font-size: 15.5vw;
   line-height: 0.80597;
   text-align: center;
   text-transform: uppercase;
@@ -53,7 +53,7 @@ h1 {
 @media (min-width: 768px) {
   h1 {
     -webkit-text-stroke-width: 2px;
-    font-size: 15.5vw;
+    font-size: 9.5vw;
   }
 }
 
