@@ -61,6 +61,7 @@ h2 {
   font-size: 38px;
   letter-spacing: 0;
   text-align: center;
+  font-weight: 700;
 }
 
 h2.htitle {
@@ -80,13 +81,14 @@ h3 {
   font-family: "Libre Franklin", sans-serif;
   font-size: 1.5em;
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h4 {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.9em;
-  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-bottom: -3px;
 }
 
 .volumes {
