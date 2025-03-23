@@ -82,6 +82,7 @@ h3 {
   font-size: 1.5em;
   text-align: center;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 h4 {
@@ -89,6 +90,7 @@ h4 {
   font-size: 1.1em;
   font-weight: 700;
   margin-bottom: -3px;
+  line-height: 1.4;
 }
 
 .volumes {
