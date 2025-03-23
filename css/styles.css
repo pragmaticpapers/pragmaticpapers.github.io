@@ -5,138 +5,12 @@
   --caption-color: #444;
 }
 
-@font-face {
-  font-family: "Harriet Text";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Harriet Text"),
-    url("https://fonts.cdnfonts.com/s/37278/HARRIETTEXTREGULAR.woff")
-      format("woff");
-}
-@font-face {
-  font-family: "Harriet Text";
-  font-style: italic;
-  font-weight: 400;
-  src: local("Harriet Text"),
-    url("https://fonts.cdnfonts.com/s/37278/HARRIETTEXTITALIC.woff")
-      format("woff");
-}
-@font-face {
-  font-family: "Harriet Text";
-  font-style: normal;
-  font-weight: 300;
-  src: local("Harriet Text"),
-    url("https://fonts.cdnfonts.com/s/37278/HARRIETTEXTLIGHT.woff")
-      format("woff");
-}
-@font-face {
-  font-family: "Harriet Text";
-  font-style: italic;
-  font-weight: 300;
-  src: local("Harriet Text"),
-    url("https://fonts.cdnfonts.com/s/37278/HARRIETTEXTLIGHTITALIC.woff")
-      format("woff");
-}
-@font-face {
-  font-family: "Harriet Text";
-  font-style: normal;
-  font-weight: 500;
-  src: local("Harriet Text"),
-    url("https://fonts.cdnfonts.com/s/37278/HARRIETTEXTMEDIUM.woff")
-      format("woff");
-}
-@font-face {
-  font-family: "Harriet Text";
-  font-style: italic;
-  font-weight: 500;
-  src: local("Harriet Text"),
-    url("https://fonts.cdnfonts.com/s/37278/HARRIETTEXTMEDIUMITALIC.woff")
-      format("woff");
-}
-@font-face {
-  font-family: "Harriet Text";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Harriet Text"),
-    url("https://fonts.cdnfonts.com/s/37278/HARRIETTEXTBOLD.woff")
-      format("woff");
-}
-@font-face {
-  font-family: "Harriet Text";
-  font-style: italic;
-  font-weight: 700;
-  src: local("Harriet Text"),
-    url("https://fonts.cdnfonts.com/s/37278/HARRIETTEXTBOLDITALIC.woff")
-      format("woff");
-}
-
-@font-face {
-  font-family: "Franklin Gothic";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Franklin Gothic"),
-    url("https://fonts.cdnfonts.com/s/14900/FranklinGothic.woff") format("woff");
-}
-@font-face {
-  font-family: "Franklin Gothic";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Franklin Gothic"),
-    url("https://fonts.cdnfonts.com/s/14900/FRANKGO.woff") format("woff");
-}
-@font-face {
-  font-family: "Franklin Gothic";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Franklin Gothic"),
-    url("https://fonts.cdnfonts.com/s/14900/Franklin Gothic Condensed.woff")
-      format("woff");
-}
-@font-face {
-  font-family: "Franklin Gothic";
-  font-style: italic;
-  font-weight: 400;
-  src: local("Franklin Gothic"),
-    url("https://fonts.cdnfonts.com/s/14900/FranklinGothicITALIC.woff")
-      format("woff");
-}
-@font-face {
-  font-family: "Franklin Gothic";
-  font-style: italic;
-  font-weight: 400;
-  src: local("Franklin Gothic"),
-    url("https://fonts.cdnfonts.com/s/14900/fgwo____.woff") format("woff");
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
-  font-style: normal;
-  font-weight: 400;
-  src: local("JetBrains Mono"),
-    url("https://fonts.cdnfonts.com/s/98875/JetBrainsMonoRegular.woff")
-      format("woff");
-}
-@font-face {
-  font-family: "JetBrains Mono";
-  font-style: italic;
-  font-weight: 400;
-  src: local("JetBrains Mono"),
-    url("https://fonts.cdnfonts.com/s/98875/JetBrainsMonoItalic.woff")
-      format("woff");
-}
-@font-face {
-  font-family: "JetBrains Mono";
-  font-style: normal;
-  font-weight: 700;
-  src: local("JetBrains Mono"),
-    url("https://fonts.cdnfonts.com/s/98875/JetBrainsMonoBold.woff")
-      format("woff");
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
 
 body {
   line-height: 1.6;
-  font-family: "Harriet Text", serif;
-  font-weight: 300;
+  font-family: "Libre Franklin", serif;
+  font-weight: 400;
   font-size: 18px;
   letter-spacing: -0.18px;
   margin: auto;
@@ -166,7 +40,7 @@ h1 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--brand-color);
   color: transparent;
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 9.5vw;
   line-height: 0.80597;
   text-align: center;
@@ -182,7 +56,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Franklin Gothic", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   line-height: 1.2;
   font-size: 38px;
   letter-spacing: 0;
@@ -190,7 +64,7 @@ h2 {
 }
 
 h2.htitle {
-  font-family: "Harriet Text", serif;
+  font-family: "Libre Franklin", serif;
   font-size: 30px;
   line-height: 1;
   letter-spacing: -0.18px;
@@ -203,14 +77,14 @@ h2.htitle:hover {
 }
 
 h3 {
-  font-family: "Franklin Gothic", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 1.5em;
   text-align: center;
   font-weight: 400;
 }
 
 h4 {
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   font-size: 0.9em;
   font-weight: 600;
 }
@@ -225,7 +99,7 @@ h4 {
 }
 
 .volumeinfo {
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   font-size: 12px;
   line-height: 1.16667;
   color: inherit;
@@ -243,7 +117,7 @@ h4 {
 }
 
 .volumedescription {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 1.28571;
   color: var(--caption-color);
@@ -253,7 +127,7 @@ h4 {
 
 .author,
 .supplementary {
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   font-size: 13px;
   line-height: 1.4;
   text-align: center;
@@ -359,8 +233,9 @@ pre,
 }
 
 .articleinfoshort {
-  font-family: "Franklin Gothic", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 22px;
+  font-weight: 800;
   color: var(--caption-color);
   line-height: 1.25;
 }
@@ -371,7 +246,7 @@ pre,
 }
 
 .articleinfolong {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   color: var(--caption-color);
   padding-top: 5px;
@@ -402,7 +277,7 @@ a.article-link {
 
 .caption {
   display: block;
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   font-size: 0.8em;
   line-height: 1.4;
   margin-top: 10px;
@@ -467,14 +342,14 @@ a.logolink {
   }
 
   .articleinfoshort {
-    font-family: "Franklin Gothic", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 22px;
     color: var(--caption-color);
     line-height: 1.25;
   }
 
   .articleinfolong {
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 14px;
     color: var(--caption-color);
     padding-top: 5px;
@@ -544,5 +419,4 @@ sup a:hover {
   .volumedate {
     color: var(--light-brand-color);
   }
-
 }
