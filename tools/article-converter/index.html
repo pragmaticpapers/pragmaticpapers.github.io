@@ -63,13 +63,35 @@
           </select>
         </div>
 
+        <div class="input-field">
+          <label for="localViewing">Local viewing:</label>
+          <input type="checkbox" id="localViewing" />
+        </div>
+
         <button id="convertButton">Convert</button>
       </section>
 
       <section id="htmlOutput"></section>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.9.0/mammoth.browser.min.js"
+      integrity="sha512-I6VLiRYuVjvj3wqk3u3/qBYJEfo0I3RgHhnCk6kuXUp/QudbzsgspGZTAbyG82sheQQVdPU0zCiytfSckC5VXQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"
+      integrity="sha512-XMVd28F1oH/O71fzwBnV7HucLxVwtxf26XV8P4wPk26EDxuGZ91N8bsOttmnomcCD3CS5ZMRL50H0GgOHvegtg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.15.3/beautify-html.js"
+      integrity="sha512-eBSPMkvLlHOIHDsQqYapDqBRmSKjNeAFtLgZbrtwoqc93s1hWvhj8cupkg7dGGr/CvCJDDDKLB4G5zDPX1FaGw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="converter.js"></script>
   </body>
 </html>
