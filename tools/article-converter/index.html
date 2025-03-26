@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Article Converter</h1>
+    </header>
+    <main>
+      <section class="upload-section">
+        <div id="dropArea">
+          <p>Drag and drop your .DOCX file here, or click to select.</p>
+          <span id="fileNameDisplay"></span>
+        </div>
+        <input
+          type="file"
+          id="fileInput"
+          accept=".docx"
+          style="display: none"
+        />
+      </section>
+
+      <section class="form-section">
+        <div class="input-field">
+          <label for="articleTitle">Title:</label>
+          <input
+            type="text"
+            id="articleTitle"
+            placeholder="Enter article title"
+            required
+          />
+        </div>
+
+        <div class="input-field">
+          <label for="authorNameAndLink">Username:</label>
+          <input
+            type="text"
+            id="authorNameAndLink"
+            placeholder="Enter your Reddit username"
+            required
+          />
+        </div>
+
+        <div class="input-field">
+          <label for="articleDate">Date:</label>
+          <input
+            type="text"
+            id="articleDate"
+            placeholder="e.g. April 4, 2025"
+            required
+          />
+        </div>
+
+        <div class="input-field">
+          <label for="templateOption">Template:</label>
+          <select id="templateOption">
+            <option value="article">Article</option>
+            <option value="barebones">None</option>
+          </select>
+        </div>
+
+        <button id="convertButton">Convert</button>
+      </section>
+
+      <section id="htmlOutput"></section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script src="converter.js"></script>
+  </body>
+</html>

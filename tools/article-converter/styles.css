@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --primary: #0057ae;
+  --primary-light: #0080ff;
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; 
+  font-weight: 500;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+/* Main Content */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Upload Section */
+.upload-section {
+  margin-bottom: 2rem;
+}
+
+#dropArea {
+  border: 2px dashed var(--primary-light);
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+#dropArea.dragover {
+  border-color: var(--primary);
+}
+
+#dropArea p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+#fileNameDisplay {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
+/* Form Section */
+.form-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.input-field {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.input-field label {
+  width: 150px;
+  font-weight: 700;
+  color: #444;
+}
+
+.input-field input,
+.input-field select {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-field input:focus,
+.input-field select:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.input-field input.invalid {
+  border-color: #d32f2f; /* Red */
+}
+
+/* Button */
+#convertButton {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+#convertButton:hover {
+  background-color: var(--primary-light);
+}
+
+/* Output Section */
+#htmlOutput {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  min-height: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .input-field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-field label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  #convertButton {
+    padding: 0.75rem;
+  }
+}
