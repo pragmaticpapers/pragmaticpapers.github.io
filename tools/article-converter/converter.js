@@ -215,6 +215,8 @@ function generateHtml(htmlContent, imageFiles) {
           <title>${articleTitle} - The DGG Pragmatic Papers</title>
           <link data-react-helmet="true" rel="shortcut icon" href="${faviconPath}" type="image/x-icon" />
           <link rel="stylesheet" href="${cssPath}" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-R13B7T2SGY"></script>
+          <script src="/js/analytics.js"></script>
         </head>
         <body>
           <header>
