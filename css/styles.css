@@ -27,9 +27,6 @@ body {
 
 /* Since Apple sucks at updating its browser (Safari doesn't support
 @media within SVGs), a workaround is needed for now. */
-
-/* Temporarily disabled */
-/*
 @supports (-webkit-line-snap: baseline) {
   @media (prefers-color-scheme: dark) {
     img.logo {
@@ -37,7 +34,6 @@ body {
     }
   }
 }
-*/
 
 header {
   text-align: center;
@@ -410,10 +406,6 @@ sup a:hover {
 }
 
 /* Dark Mode */
-
-/* Temporarily disabled */
-
-/*
 @media (prefers-color-scheme: dark) {
   body {
     color: #e9e9e9;
@@ -444,4 +436,3 @@ sup a:hover {
     color: var(--light-brand-color);
   }
 }
-*/
