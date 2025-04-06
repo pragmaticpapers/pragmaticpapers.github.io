@@ -416,6 +416,10 @@ sup a:hover {
     -webkit-text-stroke-color: var(--light-brand-color);
   }
 
+  .invertphoto {
+    filter: invert(0.95);
+  }
+
   .articleinfoshort {
     color: #e9e9e9;
   }
