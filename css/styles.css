@@ -104,6 +104,11 @@ h4 {
   line-height: 1.4;
 }
 
+.volumes-title {
+  display: flex;
+  justify-content: center;
+}
+
 .volumes {
   width: 75%;
   margin: auto;
