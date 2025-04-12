@@ -51,7 +51,7 @@ async function processImage(filePath) {
       // Skip if target width is larger than original
       if (width >= metadata.width) continue;
       
-      const resizedDir = path.join('static', 'responsive');
+      const resizedDir = path.join(directory, 'responsive');
       ensureDirectoryExists(resizedDir);
       
       // Create resized WebP
