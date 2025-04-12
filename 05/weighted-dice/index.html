@@ -1,36 +1,22 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html><html><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>You Are Playing with Weighted Dice - The DGG Pragmatic Papers</title>
-    <link
-      data-react-helmet="true"
-      rel="shortcut icon"
-      href="/assets/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-R13B7T2SGY"
-    ></script>
+    <link data-react-helmet="true" rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R13B7T2SGY"></script>
     <script src="/js/analytics.js"></script>
   </head>
 
   <body>
     <header>
       <a href="/" class="logolink">
-        <img class="logo" src="/assets/pragmaticpapers.svg" alt="Logo" />
+        <img class="logo" src="/assets/pragmaticpapers.svg" alt="Logo" width="358" height="106" loading="lazy">
       </a>
     </header>
     <h2>You Are Playing with Weighted Dice</h2>
     <div class="author">
-      <span
-        >by
-        <strong
-          ><a href="https://reddit.com/user/Zeraphant">u/Zeraphant</a></strong
-        ></span
-      ><br />
+      <span>by
+        <strong><a href="https://reddit.com/user/Zeraphant">u/Zeraphant</a></strong></span><br>
       <span>March 30, 2025</span>
     </div>
     <div class="squiggle"></div>
@@ -66,15 +52,21 @@
     </p>
 
     <div class="image-container">
-      <img
-        src="/uploads/05/ryan.png"
-        alt="POV: Ryan is about to show off his chess club trophies"
-        style="width: 65%;"
-      />
-      <span class="caption"
-        >POV: Ryan is about to show off his chess club trophies
+      <picture>
+        <!-- WebP version for modern browsers -->
+        <source srcset="/uploads/05/ryan.webp,
+                  /uploads/05/responsive/ryan-400w.webp 400w,
+                  /uploads/05/responsive/ryan-800w.webp 800w" sizes="(max-width: 600px) 100vw, 800px" type="image/webp">
+        <!-- Original format fallback -->
+        <source srcset="/uploads/05/ryan.png,
+                  /uploads/05/responsive/ryan-400w.png 400w,
+                  /uploads/05/responsive/ryan-800w.png 800w" sizes="(max-width: 600px) 100vw, 800px">
+        <!-- Final fallback image -->
+        <img src="/uploads/05/ryan.png" alt="POV: Ryan is about to show off his chess club trophies" width="611" height="1060" loading="lazy">
+      </picture>
+      <span class="caption">POV: Ryan is about to show off his chess club trophies
       </span>
-    </div>
+      </div>
 
     <p>
       What is the likelihood that you, personally, will do some action this
@@ -98,5 +90,6 @@
       You are playing this game with weighted dice. All you have left to do is
       cast them.
     </p>
-  </body>
-</html>
+  
+
+</body></html>
