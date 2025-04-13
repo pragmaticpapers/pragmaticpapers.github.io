@@ -5,13 +5,13 @@
   --light-brand-color: #56b0ff;
   --body-color: #131313;
   --caption-color: #444;
-  
+
   /* Use CSS variables for spacing to maintain consistency */
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
-  
+
   /* Add properties for smooth scrolling and improved text rendering */
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -57,28 +57,12 @@ header {
     container-type: inline-size;
     container-name: articles;
   }
-  
+
   /* Use container queries instead of media queries when possible */
   @container articles (min-width: 700px) {
     .article {
       flex-basis: calc(50% - var(--spacing-lg));
     }
-  }
-}
-
-/* Optimize animations for reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
-  :root {
-    scroll-behavior: auto;
-  }
-  
-  .squiggle {
-    animation: none;
-  }
-  
-  /* Replace all animations with subtle transitions */
-  a:hover {
-    transition: none;
   }
 }
 
@@ -488,5 +472,21 @@ sup a:hover {
 
   .volumedate {
     color: var(--light-brand-color);
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+
+  .squiggle {
+    animation: none;
+  }
+
+  /* Replace all animations with subtle transitions */
+  a:hover {
+    transition: none;
   }
 }
