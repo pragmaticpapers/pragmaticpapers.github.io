@@ -5,6 +5,17 @@
   --light-brand-color: #56b0ff;
   --body-color: #131313;
   --caption-color: #444;
+  
+  /* Use CSS variables for spacing to maintain consistency */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* Add properties for smooth scrolling and improved text rendering */
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -38,6 +49,37 @@ body {
 header {
   text-align: center;
   margin-bottom: 2.5rem;
+}
+
+/* Use modern CSS features like container queries where supported */
+@supports (container-type: inline-size) {
+  .articlescontainer {
+    container-type: inline-size;
+    container-name: articles;
+  }
+  
+  /* Use container queries instead of media queries when possible */
+  @container articles (min-width: 700px) {
+    .article {
+      flex-basis: calc(50% - var(--spacing-lg));
+    }
+  }
+}
+
+/* Optimize animations for reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+  
+  .squiggle {
+    animation: none;
+  }
+  
+  /* Replace all animations with subtle transitions */
+  a:hover {
+    transition: none;
+  }
 }
 
 /* Media query for larger screens (e.g., screens wider than 768px) */
@@ -233,6 +275,7 @@ pre,
   height: 100%; /* Ensure the image takes up full space of the container */
   object-fit: cover; /* Preserve aspect ratio while filling the container */
   border-radius: 6px;
+  transform: translateZ(0); /* Hardware acceleration */
 }
 
 /* Ensure the <a> tag doesn't break plex layout */
@@ -328,6 +371,8 @@ a.logolink {
     gap: 20px;
     padding-top: 15px;
     padding-bottom: 30px;
+    content-visibility: auto;
+    contain-intrinsic-size: 0 500px; /* Estimate for height */
   }
 
   .article {

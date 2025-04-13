@@ -1,38 +1,24 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html><html><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
       When Beat the Drums of War (Opinion) - The DGG Pragmatic Papers
     </title>
-    <link
-      data-react-helmet="true"
-      rel="shortcut icon"
-      href="/assets/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-R13B7T2SGY"
-    ></script>
+    <link data-react-helmet="true" rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R13B7T2SGY"></script>
     <script src="/js/analytics.js"></script>
   </head>
 
   <body>
     <header>
       <a href="/" class="logolink">
-        <img class="logo" src="/assets/pragmaticpapers.svg" alt="Logo" />
+        <img class="logo" src="/assets/pragmaticpapers.svg" alt="Logo" width="358" height="106" loading="lazy">
       </a>
     </header>
     <h2>When Beat the Drums of War (Opinion)</h2>
     <div class="author">
-      <span
-        >by
-        <strong
-          ><a href="https://reddit.com/user/Zeraphant">u/Zeraphant</a></strong
-        ></span
-      ><br />
+      <span>by
+        <strong><a href="https://reddit.com/user/Zeraphant">u/Zeraphant</a></strong></span><br>
       <span>April 6, 2025</span>
     </div>
 
@@ -48,13 +34,20 @@
     </p>
 
     <div class="image-container">
-      <img
-        class="invertphoto"
-        src="/uploads/06/goodbadoutcome.png"
-        alt="Image 1"
-      />
+      <picture>
+        <!-- WebP version for modern browsers -->
+        <source srcset="/uploads/06/goodbadoutcome.webp,
+                  /uploads/06/responsive/goodbadoutcome-400w.webp 400w,
+                  /uploads/06/responsive/goodbadoutcome-800w.webp 800w" sizes="(max-width: 600px) 100vw, 800px" type="image/webp">
+        <!-- Original format fallback -->
+        <source srcset="/uploads/06/goodbadoutcome.png,
+                  /uploads/06/responsive/goodbadoutcome-400w.png 400w,
+                  /uploads/06/responsive/goodbadoutcome-800w.png 800w" sizes="(max-width: 600px) 100vw, 800px">
+        <!-- Final fallback image with preserved classes -->
+        <img src="/uploads/06/goodbadoutcome.png" alt="Image 1" width="1701" height="650" loading="lazy" class="invertphoto">
+      </picture>
       <span class="caption"></span>
-    </div>
+      </div>
 
     <p>
       A bargaining friction occurs when there is disagreement between the
@@ -131,12 +124,21 @@
     </p>
 
     <div class="image-container">
-      <img src="/uploads/06/protests.jpg" alt="Image 2" />
-      <span class="caption"
-        >Protests in Albuquerque New Mexico on April 5th -
-        u/Greatwhiteterr</span
-      >
-    </div>
+      <picture>
+        <!-- WebP version for modern browsers -->
+        <source srcset="/uploads/06/protests.webp,
+                  /uploads/06/responsive/protests-400w.webp 400w,
+                  /uploads/06/responsive/protests-800w.webp 800w" sizes="(max-width: 600px) 100vw, 800px" type="image/webp">
+        <!-- Original format fallback -->
+        <source srcset="/uploads/06/protests.jpg,
+                  /uploads/06/responsive/protests-400w.jpg 400w,
+                  /uploads/06/responsive/protests-800w.jpg 800w" sizes="(max-width: 600px) 100vw, 800px">
+        <!-- Final fallback image with preserved classes -->
+        <img src="/uploads/06/protests.jpg" alt="Image 2" width="2048" height="1150" loading="lazy">
+      </picture>
+      <span class="caption">Protests in Albuquerque New Mexico on April 5th -
+        u/Greatwhiteterr</span>
+      </div>
 
     <p>
       The scenario I describe seems unlikely – Republicans have only gotten more
@@ -156,5 +158,6 @@
       <a href="https://discord.gg/MmCSK9Xr">DGG political action server</a>
       today.
     </p>
-  </body>
-</html>
+  
+
+</body></html>
