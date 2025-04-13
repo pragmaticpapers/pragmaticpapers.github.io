@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="/css/styles.css" />
     <script
-      async
+      async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-R13B7T2SGY"
     ></script>
     <script src="/js/analytics.js"></script>
@@ -22,7 +22,13 @@
   <body>
     <header>
       <a href="/" class="logolink">
-        <img class="logo" src="/assets/pragmaticpapers.svg" alt="Logo" />
+        <img
+          class="logo"
+          src="/assets/pragmaticpapers.svg"
+          alt="Logo"
+          width="358"
+          height="106"
+        />
       </a>
     </header>
 
@@ -62,7 +68,35 @@
     </p>
 
     <div class="image-container">
-      <img src="/uploads/07/elonlookinghappy.png" alt="Elon looking happy" />
+      <picture>
+        <!-- WebP version for modern browsers -->
+        <source
+          srcset="
+            /uploads/07/elonlookinghappy.webp,
+            /uploads/07/responsive/elonlookinghappy-400w.webp 400w,
+            /uploads/07/responsive/elonlookinghappy-800w.webp 800w
+          "
+          sizes="(max-width: 600px) 100vw, 800px"
+          type="image/webp"
+        />
+        <!-- Original format fallback -->
+        <source
+          srcset="
+            /uploads/07/elonlookinghappy.png,
+            /uploads/07/responsive/elonlookinghappy-400w.png 400w,
+            /uploads/07/responsive/elonlookinghappy-800w.png 800w
+          "
+          sizes="(max-width: 600px) 100vw, 800px"
+        />
+        <!-- Final fallback image with preserved classes -->
+        <img
+          src="/uploads/07/elonlookinghappy.png"
+          alt="Elon looking happy"
+          width="1434"
+          height="796"
+          loading="lazy"
+        />
+      </picture>
       <span class="caption"
         >Elon Musk attends a Cabinet meeting with President Donald Trump in the
         Cabinet Room of the White House on April 10, 2025, in Washington, D.C.
@@ -208,7 +242,33 @@
     </p>
 
     <div class="image-container" style="width: 55%">
-      <img src="/uploads/07/peopletrollingelon.png" alt="Image 2" />
+      <picture>
+        <!-- WebP version for modern browsers -->
+        <source
+          srcset="
+            /uploads/07/peopletrollingelon.webp,
+            /uploads/07/responsive/peopletrollingelon-400w.webp 400w
+          "
+          sizes="(max-width: 600px) 100vw, 800px"
+          type="image/webp"
+        />
+        <!-- Original format fallback -->
+        <source
+          srcset="
+            /uploads/07/peopletrollingelon.png,
+            /uploads/07/responsive/peopletrollingelon-400w.png 400w
+          "
+          sizes="(max-width: 600px) 100vw, 800px"
+        />
+        <!-- Final fallback image with preserved classes -->
+        <img
+          src="/uploads/07/peopletrollingelon.png"
+          alt="Image 2"
+          width="533"
+          height="820"
+          loading="lazy"
+        />
+      </picture>
       <span class="caption"
         >Elon gets trolled during a livestream (X/Elon Musk)</span
       >
