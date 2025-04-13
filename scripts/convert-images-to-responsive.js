@@ -60,6 +60,10 @@ async function processHtmlFile(filePath) {
       const width = img.getAttribute('width') || '800';
       const height = img.getAttribute('height') || '450';
       
+      // IMPORTANT: Check for invertphoto class
+      const hasInvertClass = img.classList.contains('invertphoto');
+      const imgClasses = img.getAttribute('class') || '';
+      
       // Find caption if exists
       const caption = container.querySelector('.caption');
       const captionHTML = caption ? caption.outerHTML : '';
@@ -85,7 +89,7 @@ async function processHtmlFile(filePath) {
         continue;
       }
       
-      // Create the new picture element HTML
+      // Create the new picture element HTML with preserved class if needed
       const pictureHTML = `
       <picture>
         <!-- WebP version for modern browsers -->
@@ -103,13 +107,14 @@ async function processHtmlFile(filePath) {
                   ${responsiveDir}/${imgName}-800w${imgExt} 800w"
           sizes="(max-width: 600px) 100vw, 800px"
         />
-        <!-- Final fallback image -->
+        <!-- Final fallback image with preserved classes -->
         <img
           src="${src}"
           alt="${alt}"
           width="${width}"
           height="${height}"
           loading="lazy"
+          ${imgClasses ? `class="${imgClasses}"` : ''}
         />
       </picture>
       ${captionHTML}
@@ -118,7 +123,13 @@ async function processHtmlFile(filePath) {
       // Replace the content of the container
       container.innerHTML = pictureHTML;
       modified = true;
-      console.log(`  Converted image: ${src}`);
+      
+      // Log special message for invertphoto images
+      if (hasInvertClass) {
+        console.log(`  Converted image with invertphoto class: ${src}`);
+      } else {
+        console.log(`  Converted image: ${src}`);
+      }
     }
     
     // Save the modified HTML file
