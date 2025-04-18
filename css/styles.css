@@ -32,7 +32,6 @@ body {
 }
 
 .logo {
-  max-height: 85px; /* Small size for smaller screens */
   margin: 0 auto;
 }
 
@@ -63,13 +62,6 @@ header {
     .article {
       flex-basis: calc(50% - var(--spacing-lg));
     }
-  }
-}
-
-/* Media query for larger screens (e.g., screens wider than 768px) */
-@media (min-width: 768px) {
-  .logo {
-    max-height: 115px; /* Normal size for larger screens */
   }
 }
 

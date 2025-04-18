@@ -213,26 +213,52 @@ function generateHtml(htmlContent, imageFiles) {
         <head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>${articleTitle} - The DGG Pragmatic Papers</title>
-          <link data-react-helmet="true" rel="shortcut icon" href="${faviconPath}" type="image/x-icon" />
+          <link
+            data-react-helmet="true"
+            rel="shortcut icon"
+            href="${faviconPath}"
+            type="image/x-icon"
+          />
           <link rel="stylesheet" href="${cssPath}" />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-R13B7T2SGY"></script>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-R13B7T2SGY"
+          ></script>
           <script src="/js/analytics.js"></script>
         </head>
+
         <body>
           <header>
-            <a href="/" class="logolink">
-              <img class="logo" src="${logoPath}" alt="Logo" />
+            <a href="/" class="logolink"
+              ><img
+                class="logo"
+                src="${logoPath}"
+                alt="Logo"
+                width="293"
+                height="87"
+              />
             </a>
           </header>
+
           <h2>${articleTitle}</h2>
+
           <div class="author">
-            <span>by <strong><a href="https://reddit.com/user/${authorNameAndLink}">u/${authorNameAndLink}</a></strong></span><br />
-            <span>${articleDate}</span>
-          </div>
-          <div class="squiggle"></div>
-          ${htmlContent}
-        </body>
-      </html>
+            <span
+        >by
+        <strong
+          ><a href="https://reddit.com/user/${authorNameAndLink}"
+            >u/${authorNameAndLink}</a
+          ></strong
+        ></span
+      ><br />
+      <span>${articleDate}</span>
+    </div>
+
+    <div class="squiggle"></div>
+
+    ${htmlContent}
+  </body>
+</html>
     `;
   } else {
     finalHtml = `
