@@ -3,14 +3,22 @@
   "version": "1.0.0",
   "description": "The DGG Pragmatic Papers website",
   "main": "index.js",
-  "scripts": {
+"scripts": {
     "start": "http-server -o",
+    
     "optimize-images": "node scripts/optimize-images.js",
-    "convert-to-responsive": "node scripts/convert-images-to-responsive.js",
     "add-image-dimensions": "node scripts/add-image-dimensions.js",
+    "convert-to-responsive": "node scripts/convert-images-to-responsive.js",
     "optimize-js": "node scripts/optimize-js.js",
-    "update-js-refs": "node scripts/update-js-references.js",
-    "optimize-all": "npm run optimize-images && npm run add-image-dimensions && npm run optimize-js && npm run update-js-refs",
+    "optimize-all": "npm run optimize-images && npm run add-image-dimensions && npm run convert-to-responsive",
+    "remove-logo-lazy": "node scripts/remove-logo-lazy-loading.js",
+    
+    "optimize-images:vol": "node scripts/optimize-images.js",
+    "add-image-dimensions:vol": "node scripts/add-image-dimensions.js",
+    "convert-to-responsive:vol": "node scripts/convert-images-to-responsive.js",
+    "optimize-vol": "npm run optimize-images:vol && npm run add-image-dimensions:vol && npm run convert-to-responsive:vol",
+    
+    "format": "node scripts/format-html.js",
     "test": "lighthouse http://localhost:8080 --view"
   },
   "repository": {
@@ -29,10 +37,12 @@
   },
   "homepage": "https://github.com/pragmaticpapers/pragmaticpapers.github.io#readme",
   "devDependencies": {
+    "glob": "^11.0.1",
     "http-server": "^14.1.1",
     "jsdom": "^22.1.0",
     "lighthouse": "^11.0.0",
+    "prettier": "^3.5.3",
     "sharp": "^0.32.6",
-    "terser": "^5.19.2"
+    "terser": "^5.39.0"
   }
 }
