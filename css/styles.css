@@ -3,6 +3,7 @@
 :root {
   --brand-color: #0080ff;
   --light-brand-color: #56b0ff;
+  --very-light-brand-color: #bbdfff;
   --body-color: #131313;
   --caption-color: #444;
 
@@ -339,6 +340,13 @@ a.logolink {
   cursor: pointer;
 }
 
+blockquote {
+  border-left: 5px solid var(--brand-color);
+  padding: 15px 0 15px 20px;
+  margin-left: 1em;
+  background-color: var(--very-light-brand-color);
+}
+
 /* Mobile layout */
 @media (max-width: 768px) {
   .articlescontainer {
@@ -464,6 +472,10 @@ sup a:hover {
 
   .volumedate {
     color: var(--light-brand-color);
+  }
+
+  blockquote {
+    background-color: #181818;
   }
 }
 
