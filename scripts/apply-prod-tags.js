@@ -9,21 +9,22 @@ const MAPPING_FILE = path.join(__dirname, '..', 'github-to-prod-mapping.json');
 // The `detect` pattern is used to check if the tag already exists in the file.
 const MODES = {
   redirect: {
-    description: 'Add <meta http-equiv="refresh"> for instant redirect',
+    description: '<meta http-equiv="refresh"> for instant redirect',
     detect: 'http-equiv="refresh"',
     build: (url) => `    <meta http-equiv="refresh" content="0; URL=${url}" />`,
+    remove: /^[ \t]*<meta http-equiv="refresh"[^>]*>\n?/gm,
   },
   canonical: {
-    description: 'Add <link rel="canonical"> pointing to prod URL',
+    description: '<link rel="canonical"> pointing to prod URL',
     detect: 'rel="canonical"',
     build: (url) => `    <link rel="canonical" href="${url}" />`,
+    remove: /^[ \t]*<link rel="canonical"[^>]*>\n?/gm,
   },
 };
 
 function usage() {
-  console.log('Usage: node apply-prod-tags.js <mode> [--dry-run]');
-  console.log('       node apply-prod-tags.js all [--dry-run]');
-  console.log('       node apply-prod-tags.js --list\n');
+  console.log('Usage: node apply-prod-tags.js <mode> [--dry-run] [--remove]');
+  console.log('       node apply-prod-tags.js all [--dry-run] [--remove]\n');
   console.log('Modes:');
   for (const [name, mode] of Object.entries(MODES)) {
     console.log(`  ${name.padEnd(12)} ${mode.description}`);
@@ -31,6 +32,7 @@ function usage() {
   console.log(`  ${'all'.padEnd(12)} Apply all modes at once`);
   console.log('\nOptions:');
   console.log('  --dry-run  Show what would be changed without writing files');
+  console.log('  --remove   Remove the tags instead of adding them');
   process.exit(1);
 }
 
@@ -98,11 +100,54 @@ function applyTags(entries, modes, dryRun) {
   console.log(`Missing files: ${missing}`);
 }
 
+function removeTags(entries, modes, dryRun) {
+  let modified = 0;
+  let skipped = 0;
+  let missing = 0;
+
+  for (const { file } of entries) {
+    if (!fs.existsSync(file)) {
+      missing++;
+      continue;
+    }
+
+    let html = fs.readFileSync(file, 'utf8');
+    let changed = false;
+
+    for (const [name, mode] of Object.entries(modes)) {
+      const updated = html.replace(mode.remove, '');
+      if (updated !== html) {
+        html = updated;
+        changed = true;
+      }
+    }
+
+    if (!changed) {
+      skipped++;
+      continue;
+    }
+
+    if (dryRun) {
+      console.log(`WOULD REMOVE from: ${file}`);
+    } else {
+      fs.writeFileSync(file, html);
+      console.log(`REMOVED from: ${file}`);
+    }
+    modified++;
+  }
+
+  console.log(`\n--- Summary ---`);
+  console.log(`${dryRun ? 'Would modify' : 'Modified'}: ${modified}`);
+  console.log(`No tags to remove: ${skipped}`);
+  console.log(`Missing files: ${missing}`);
+}
+
 // --- main ---
 const args = process.argv.slice(2);
 if (args.includes('--list') || args.length === 0) usage();
 
 const dryRun = args.includes('--dry-run');
+const remove = args.includes('--remove');
 const modeName = args.find((a) => !a.startsWith('--'));
 
 if (!modeName) usage();
@@ -118,5 +163,10 @@ if (modeName === 'all') {
 }
 
 const entries = collectProdMappings();
-console.log(`Found ${entries.length} pages in mapping.\n`);
-applyTags(entries, selectedModes, dryRun);
+console.log(`${remove ? 'Removing' : 'Applying'} tags for ${entries.length} pages.\n`);
+
+if (remove) {
+  removeTags(entries, selectedModes, dryRun);
+} else {
+  applyTags(entries, selectedModes, dryRun);
+}
