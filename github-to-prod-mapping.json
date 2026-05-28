@@ -1,0 +1,985 @@
+{
+  "volumes": [
+    {
+      "github_volume": "I",
+      "github_path": "https://www.reddit.com/r/Destiny/comments/1j1t61a/weekly_news_breakdown_the_first_edition_of_the/",
+      "prod_path": "/volumes/1",
+      "note": "Volume I on GitHub is just a Reddit link, not a GitHub Pages volume",
+      "articles": []
+    },
+    {
+      "github_volume": "II",
+      "github_path": "/02",
+      "prod_path": "/volumes/2",
+      "articles": [
+        {
+          "github_title": "Elon and DOGE",
+          "github_path": "/02/doge-and-elon/",
+          "prod_title": "DOGE and Elon",
+          "prod_path": "/articles/doge-and-elon",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Ukrainian Update",
+          "github_path": "/02/ukrainian-update/",
+          "prod_title": "Ukrainian Update",
+          "prod_path": "/articles/ukrainian-update",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Trump's tariffs",
+          "github_path": "/02/trumps-tariff-troubles/",
+          "prod_title": null,
+          "prod_path": null,
+          "match_confidence": "missing",
+          "note": "Not found on pragmaticpapers.com. Different from Vol VI's 'Trump's Tariffs Cause Stocks to Tumble'."
+        },
+        {
+          "github_title": "Trump's executive orders",
+          "github_path": "/02/executive-orders/",
+          "prod_title": "Trump's executive orders from March 3 to March 7",
+          "prod_path": "/articles/trumps-executive-orders-from-march-3-to-march-7",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "III",
+      "github_path": "/03",
+      "prod_path": "/volumes/3",
+      "articles": [
+        {
+          "github_title": "Schumer Folds",
+          "github_path": "/03/schumer-folds/",
+          "prod_title": "Schumer Folds on Funding",
+          "prod_path": "/articles/schumer-folds-on-funding",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "A Student for Speech",
+          "github_path": "/03/a-student-for-speech/",
+          "prod_title": "A Student for Speech",
+          "prod_path": "/articles/a-student-for-speech",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "When Transparency Becomes Opaque",
+          "github_path": "/03/when-transparency-becomes-opaque/",
+          "prod_title": "When Transparency Becomes Opaque",
+          "prod_path": "/articles/when-transparency-becomes-opaque",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Ukraine–Russia Update",
+          "github_path": "/03/ukraine-russia-update/",
+          "prod_title": "Ukraine Claws Back as Putin Rejects Ceasefire",
+          "prod_path": "/articles/ukraine-claws-back-as-putin-rejects-ceasefire",
+          "match_confidence": "high",
+          "note": "Title changed significantly on prod"
+        },
+        {
+          "github_title": "Tesla Boycott",
+          "github_path": "/03/boycotting-protesting-or-crime/",
+          "prod_title": "Boycotting Tesla",
+          "prod_path": "/articles/boycotting-tesla",
+          "match_confidence": "high",
+          "note": "Different slug and slightly different title"
+        },
+        {
+          "github_title": "Effective Outreach",
+          "github_path": "/03/effective-outreach/",
+          "prod_title": "Effective Outreach",
+          "prod_path": "/articles/effective-outreach",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Trump's Executive Orders",
+          "github_path": "/03/executive-orders/",
+          "prod_title": "Executive Order Weekly Report – Week of March 3, 2025",
+          "prod_path": "/articles/executive-order-weekly-report--week-of-march-3-2025",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "IV",
+      "github_path": "/04",
+      "prod_path": "/volumes/4",
+      "articles": [
+        {
+          "github_title": "Ceasefire In Name Only",
+          "github_path": "/04/ceasefire-in-name-only/",
+          "prod_title": "Ceasefire In Name Only",
+          "prod_path": "/articles/ceasefire-in-name-only",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "DJT Flubs IvP",
+          "github_path": "/04/djt-flubs-israel-palestine/",
+          "prod_title": "DJT Flubs IvP",
+          "prod_path": "/articles/djt-flubs-ivp",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Elon's War on the Courts",
+          "github_path": "/04/elons-war-on-the-courts/",
+          "prod_title": "Elon's War on the Courts",
+          "prod_path": "/articles/elons-war-on-the-courts",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Just Show Up",
+          "github_path": "/04/just-show-up/",
+          "prod_title": "Just Show Up",
+          "prod_path": "/articles/just-show-up",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report",
+          "github_path": "/04/executive-orders/",
+          "prod_title": "Executive Order Weekly Report – Week of March 10, 2025",
+          "prod_path": "/articles/executive-order-weekly-report",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "V",
+      "github_path": "/05",
+      "prod_path": "/volumes/5",
+      "articles": [
+        {
+          "github_title": "TROs, Contempt, and the Last Stand of the Judiciary",
+          "github_path": "/05/tros-contempt-last-stand-of-judiciary/",
+          "prod_title": "TROs, Contempt, and the Last Stand of the Judiciary",
+          "prod_path": "/articles/tros-contempt-and-the-last-stand-of-the-judiciary",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Signal Chat Fiasco",
+          "github_path": "/05/signal-chat-fiasco/",
+          "prod_title": "Signal Chat Fiasco",
+          "prod_path": "/articles/signal-chat-fiasco",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "When a Fail Becomes Too Big to Save",
+          "github_path": "/05/fail-too-big-to-save/",
+          "prod_title": "When a Fail Becomes Too Big to Save",
+          "prod_path": "/articles/when-a-fail-becomes-too-big-to-save",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Ukraine–Russia Update",
+          "github_path": "/05/ukraine-russia/",
+          "prod_title": "Ukraine-Russia Update",
+          "prod_path": "/articles/ukraine-russia-update",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "You Are Playing with Weighted Dice",
+          "github_path": "/05/weighted-dice/",
+          "prod_title": "You Are Playing with Weighted Dice",
+          "prod_path": "/articles/you-are-playing-with-weighted-dice",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report",
+          "github_path": "/05/executive-orders/",
+          "prod_title": "Executive Order Weekly Report – Week of March 17, 2025",
+          "prod_path": "/articles/executive-order-weekly-report--week-of-march-17-2025",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "VI",
+      "github_path": "/06",
+      "prod_path": "/volumes/6",
+      "articles": [
+        {
+          "github_title": "Destiny's Dissent: Billionaires",
+          "github_path": "/06/destinys-dissent/",
+          "prod_title": "Destiny's Dissent: Billionaires",
+          "prod_path": "/articles/destinys-dissent-billionaires",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Trump's Tariffs Cause Stocks to Tumble, Fears to Rise",
+          "github_path": "/06/trumps-tariffs-cause-stocks-to-tumble/",
+          "prod_title": "Trump's Tariffs Cause Stocks to Tumble, Fears to Rise",
+          "prod_path": "/articles/trumps-tariffs-cause-stocks-to-tumble-fears-to-rise",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "When Beat the Drums of War",
+          "github_path": "/06/when-beat-the-drums-of-war/",
+          "prod_title": "When Beat the Drums of War",
+          "prod_path": "/articles/when-beat-the-drums-of-war",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Special Elections",
+          "github_path": "/06/special-elections/",
+          "prod_title": "Special Elections bring hope for Dems despite mixed results",
+          "prod_path": "/articles/special-elections-bring-hope-for-dems-despite-mixed-results",
+          "match_confidence": "high",
+          "note": "Title expanded on prod"
+        },
+        {
+          "github_title": "Musk's Exit Wound",
+          "github_path": "/06/musks-exit-wound/",
+          "prod_title": "Musk's Exit Wound",
+          "prod_path": "/articles/musks-exit-wound",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Russia Builds and the U.S. Wavers",
+          "github_path": "/06/russia-builds-and-the-us-wavers/",
+          "prod_title": "Russia Builds and the U.S. Wavers",
+          "prod_path": "/articles/russia-builds-and-the-us-wavers",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Why I Am Optimistic About Ukraine",
+          "github_path": "/06/opinion-piece-ukraine/",
+          "prod_title": "Why I Am Optimistic About Ukraine",
+          "prod_path": "/articles/why-i-am-optimistic-about-ukraine",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report",
+          "github_path": "/06/executive-orders/",
+          "prod_title": "Executive Order Weekly Report – Week of March 24, 2025",
+          "prod_path": "/articles/executive-order-weekly-report--week-of-march-24-2025",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "VII",
+      "github_path": "/07",
+      "prod_path": "/volumes/7",
+      "articles": [
+        {
+          "github_title": "Build Walls, Burn Bridges: Trump's Global Trade Disaster",
+          "github_path": "/07/build-walls-burn-bridges/",
+          "prod_title": "Build Walls, Burn Bridges: Trump's Global Trade Disaster",
+          "prod_path": "/articles/build-walls-burn-bridges-trumps-global-trade-disaster",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Trust Us, We're the Government: DOGE Edition",
+          "github_path": "/07/trust-us-were-the-government/",
+          "prod_title": "Trust Us, We're the Government: DOGE Edition",
+          "prod_path": "/articles/trust-us-were-the-government-doge-edition",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Powerlessness Corrupts: The Incorruptible Idealist",
+          "github_path": "/07/powerlessness-corrupts/",
+          "prod_title": "Powerlessness Corrupts: The Incorruptible Idealist",
+          "prod_path": "/articles/powerlessness-corrupts-the-incorruptible-idealist",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Russia and Ukraine Ramp up as Peace Deal Stalls",
+          "github_path": "/07/russia-ukraine/",
+          "prod_title": "Russia and Ukraine Ramp up as Peace Deal Stalls",
+          "prod_path": "/articles/russia-and-ukraine-ramp-up-as-peace-deal-stalls",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Same Story, Different Day for Israel and Palestine",
+          "github_path": "/07/israel-palestine/",
+          "prod_title": "Same Story, Different Day for Israel and Palestine",
+          "prod_path": "/articles/same-story-different-day-for-israel-and-palestine",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "A Little Effort, a Big Impact",
+          "github_path": "/07/little-effort-big-impact/",
+          "prod_title": "A Little Effort, a Big Impact",
+          "prod_path": "/articles/a-little-effort-a-big-impact",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report",
+          "github_path": "/07/executive-orders/",
+          "prod_title": "Executive Order Weekly Report – Week of March 31, 2025",
+          "prod_path": "/articles/executive-order-weekly-report--week-of-march-31-2025",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "VIII",
+      "github_path": "/08",
+      "prod_path": "/volumes/8",
+      "articles": [
+        {
+          "github_title": "Concepts of a Plan: Trump's Roadmap to Nowhere",
+          "github_path": "/08/concepts-of-a-plan/",
+          "prod_title": "Concepts of a Plan: Trump's Roadmap to Nowhere",
+          "prod_path": "/articles/concepts-of-a-plan-trumps-roadmap-to-nowhere",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Efficiency, but Make It Eugenics",
+          "github_path": "/08/efficiency-but-make-it-eugenics/",
+          "prod_title": "Efficiency, but Make It Eugenics",
+          "prod_path": "/articles/efficiency-but-make-it-eugenics",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Is War Next for Israel and Iran?",
+          "github_path": "/08/is-war-next-for-israel-and-iran/",
+          "prod_title": "Is War Next for Israel and Iran?",
+          "prod_path": "/articles/is-war-next-for-israel-and-iran",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Money in Politics 101",
+          "github_path": "/08/money-in-politics-101/",
+          "prod_title": "Money in Politics 101",
+          "prod_path": "/articles/money-in-politics-101",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Uncanceled: The Return of Disgraced Democrats",
+          "github_path": "/08/uncanceled-the-return-of-disgraced-democrats/",
+          "prod_title": "Uncanceled: The Return of Disgraced Democrats",
+          "prod_path": "/articles/uncanceled-the-return-of-disgraced-democrats",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Zeitenwende and Germany's Role in European Defense",
+          "github_path": "/08/zeitenwende-and-germanys-role-in-european-defense/",
+          "prod_title": "Zeitenwende and Germany's Role in European Defense",
+          "prod_path": "/articles/zeitenwende-and-germanys-role-in-european-defense",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report",
+          "github_path": "/08/executive-orders/",
+          "prod_title": "Executive Order Weekly Report – Week of April 7, 2025",
+          "prod_path": "/articles/executive-order-weekly-report-week-of-april-7-2025",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "IX",
+      "github_path": "/09",
+      "prod_path": "/volumes/9",
+      "articles": [
+        {
+          "github_title": "Judge Detained as Trump Admin Escalates",
+          "github_path": "/09/judge-detained/",
+          "prod_title": "Judge Detained as Trump Admin Escalates",
+          "prod_path": "/articles/judge-detained-as-trump-admin-escalates",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "From Ceasefires to Car Bombs: Ukraine's Fight Against Capitulation",
+          "github_path": "/09/from-ceasefires-to-car-bombs/",
+          "prod_title": "From Ceasefires to Car Bombs: Ukraine's Fight Against Capitulation",
+          "prod_path": "/articles/from-ceasefires-to-car-bombs-ukraines-fight-against-capitulation",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "The Coalition of the Willing",
+          "github_path": "/09/coalition-of-the-willing/",
+          "prod_title": "The Coalition of the Willing",
+          "prod_path": "/articles/the-coalition-of-the-willing",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Chainsaws Aren't Office Tools",
+          "github_path": "/09/chainsaws-arent-office-tools/",
+          "prod_title": "Chainsaws Aren't Office Tools",
+          "prod_path": "/articles/chainsaws-arent-office-tools",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "They Make a Desert and Call it Peace",
+          "github_path": "/09/they-make-a-desert/",
+          "prod_title": "They Make a Desert and Call it Peace",
+          "prod_path": "/articles/they-make-a-desert-and-call-it-peace",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "The Frontline of MAGA Election Attacks",
+          "github_path": "/09/maga-election-attacks/",
+          "prod_title": "The Frontline of MAGA Election Attacks",
+          "prod_path": "/articles/the-frontline-of-maga-election-attacks",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report",
+          "github_path": "/09/executive-orders/",
+          "prod_title": "Executive Order Weekly Report – Week of April 14, 2025",
+          "prod_path": "/articles/executive-order-weekly-report--week-of-april-14-2025",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "X",
+      "github_path": "/10",
+      "prod_path": "/volumes/10",
+      "articles": [
+        {
+          "github_title": "100 Days, 100 Ways Trump Has Hurt the US",
+          "github_path": "/10/100-days/",
+          "prod_title": "100 Days, 100 Ways Trump Has Hurt the US",
+          "prod_path": "/articles/100-days-100-ways-trump-has-hurt-the-us",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Mineral Deal Signed: Ukraine Gains Leverage",
+          "github_path": "/10/minerals-deal-signed/",
+          "prod_title": "Mineral Deal Signed: Ukraine Gains Leverage",
+          "prod_path": "/articles/mineral-deal-signed-ukraine-gains-leverage",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "The Briefest History of Internal EU Migration",
+          "github_path": "/10/brief-history/",
+          "prod_title": "The Briefest History of Internal EU Migration",
+          "prod_path": "/articles/the-briefest-history-of-internal-eu-migration",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "No Data Left Behind",
+          "github_path": "/10/no-data-left-behind/",
+          "prod_title": "No Data Left Behind",
+          "prod_path": "/articles/no-data-left-behind",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "DOGE Insider Threat",
+          "github_path": "/10/doge-insider-threat/",
+          "prod_title": "DOGE Insider Threat",
+          "prod_path": "/articles/doge-insider-threat",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Europe Braces for Impact",
+          "github_path": "/10/europe-braces-for-impact/",
+          "prod_title": "Europe Braces for Impact",
+          "prod_path": "/articles/europe-braces-for-impact",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Rain of Fire: The Threat from the North",
+          "github_path": "/10/rain-of-fire/",
+          "prod_title": "Rain of Fire: The Threat from the North",
+          "prod_path": "/articles/rain-of-fire-the-threat-from-the-north",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report",
+          "github_path": "/10/executive-orders/",
+          "prod_title": "Executive Order Weekly Report - Week of April 21, 2025",
+          "prod_path": "/articles/executive-order-weekly-report---week-of-april-21-2025",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "XI",
+      "github_path": "/11",
+      "prod_path": "/volumes/11",
+      "articles": [
+        {
+          "github_title": "Destiny's Dissent: Home Ownership",
+          "github_path": "/11/destinys-dissent/",
+          "prod_title": "Destiny's Dissent: Home Ownership",
+          "prod_path": "/articles/destinys-dissent-home-ownership",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Europe Strikes Back: EU Unveils Tariff Retaliation Amid Escalating U.S. Trade Dispute",
+          "github_path": "/11/eu-strikes-back/",
+          "prod_title": "Europe Strikes Back: EU Unveils Tariff Retaliation Amid Escalating U.S. Trade Dispute",
+          "prod_path": "/articles/europe-strikes-back-eu-unveils-tariff-retaliation-amid-escalating-us-trade-dispute",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Constructing Crisis: The Fabrication of Fraud by DOGE",
+          "github_path": "/11/constructing-crisis/",
+          "prod_title": "Constructing Crisis: The Fabrication of Fraud by DOGE",
+          "prod_path": "/articles/constructing-crisis-the-fabrication-of-fraud-by-doge",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "In Memory of Leon Greenman, a Holocaust Survivor",
+          "github_path": "/11/in-memory-of-leon-greenman/",
+          "prod_title": "In Memory of Leon Greenman, a Holocaust Survivor",
+          "prod_path": "/articles/in-memory-of-leon-greenman-a-holocaust-survivor",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Unity Parades in Moscow, Pressure in Kyiv",
+          "github_path": "/11/unity-parades-moscow-pressure-kyiv/",
+          "prod_title": "Unity Parades in Moscow, Pressure in Kyiv",
+          "prod_path": "/articles/unity-parades-in-moscow-pressure-in-kyiv",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Gaza's Protests and the Fight to be Heard",
+          "github_path": "/11/gazas-protests-fight-to-be-heard/",
+          "prod_title": "Gaza's Protests and the Fight to be Heard",
+          "prod_path": "/articles/gazas-protests-and-the-fight-to-be-heard",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report",
+          "github_path": "/11/executive-orders/",
+          "prod_title": "Executive Order Weekly Report – Week of April 28, 2025",
+          "prod_path": "/articles/executive-order-weekly-report--week-of-april-28-2025",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "XII",
+      "github_path": "/12",
+      "prod_path": "/volumes/12",
+      "articles": [
+        {
+          "github_title": "Road to Brexit",
+          "github_path": "/12/road-to-brexit/",
+          "prod_title": "The Road to Brexit",
+          "prod_path": "/articles/the-road-to-brexit",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Bridging the Channel: The UK's Strategic Pivot Back to Europe",
+          "github_path": "/12/bridging-the-channel/",
+          "prod_title": "Bridging the Channel: The UK's Strategic Pivot Back to Europe",
+          "prod_path": "/articles/bridging-the-channel-the-uks-strategic-pivot-back-to-europe",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Deadlock",
+          "github_path": "/12/deadlock/",
+          "prod_title": "Deadlock In Istanbul",
+          "prod_path": "/articles/deadlock-in-istanbul",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Checks in the mail",
+          "github_path": "/12/checks-in-the-mail/",
+          "prod_title": "Checks in the Mail",
+          "prod_path": "/articles/checks-in-the-mail",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Super Sunday",
+          "github_path": "/12/super-sunday/",
+          "prod_title": "Super Sunday 2025; EU elections",
+          "prod_path": "/articles/super-sunday-2025-eu-elections",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Path to Impeachment",
+          "github_path": "/12/the-path-to-impeachment/",
+          "prod_title": "Path to Impeachment",
+          "prod_path": "/articles/path-to-impeachment",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report",
+          "github_path": "/12/eos/",
+          "prod_title": "Executive Order Weekly Report - Week of May 5, 2025",
+          "prod_path": "/articles/executive-order-weekly-report---week-of-may-5-2025",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Occupation by Design",
+          "github_path": "/12/displacement/",
+          "prod_title": "Occupation by Design",
+          "prod_path": "/articles/occupation-by-design",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "XIII",
+      "github_path": "/13",
+      "prod_path": "/volumes/13",
+      "articles": [
+        {
+          "github_title": "The Big Beautiful Trap",
+          "github_path": "/13/big-beautiful-trap/",
+          "prod_title": "The Big Beautiful Trap",
+          "prod_path": "/articles/the-big-beautiful-trap",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Slam The Brakes: Universal Injunctions in the Trump Admin",
+          "github_path": "/13/slam-the-brakes/",
+          "prod_title": "Slam The Brakes: Universal Injunctions in the Trump Admin",
+          "prod_path": "/articles/slam-the-brakes-universal-injunctions-in-the-trump-admin",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "The Storm was Natural, the Disaster will be Political",
+          "github_path": "/13/storm/",
+          "prod_title": "The Storm was Natural, the Disaster will be Political",
+          "prod_path": "/articles/the-storm-was-natural-the-disaster-will-be-political",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Systemic Orthodoxy",
+          "github_path": "/13/systemic-orthodoxy/",
+          "prod_title": "Systemic Orthodoxy",
+          "prod_path": "/articles/systemic-orthodoxy",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Fool Me Once",
+          "github_path": "/13/fool-me-once/",
+          "prod_title": "Fool Me Once",
+          "prod_path": "/articles/fool-me-once",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Overnight Attacks on Ukraine and the Looming Summer Offensive",
+          "github_path": "/13/over-night-attacks/",
+          "prod_title": "Overnight Attacks on Ukraine and the Looming Summer Offensive",
+          "prod_path": "/articles/overnight-attacks-on-ukraine-and-the-looming-summer-offensive",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Gideon's Chariots",
+          "github_path": "/13/gideons-chariots/",
+          "prod_title": "Gideon's Chariots",
+          "prod_path": "/articles/gideons-chariots",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report",
+          "github_path": "/13/eos/",
+          "prod_title": "Executive Order Weekly Report - Week of May 12, 2025",
+          "prod_path": "/articles/executive-order-weekly-report---week-of-may-12-2025",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "XIV",
+      "github_path": "/14",
+      "prod_path": "/volumes/14",
+      "articles": [
+        {
+          "github_title": "Famine: The Gaza Humanitarian Catastrophe and the Erosion of Aid Principles",
+          "github_path": "/14/FAMINE/",
+          "prod_title": "Famine: The Gaza Humanitarian Catastrophe and the Erosion of Aid Principles",
+          "prod_path": "/articles/famine-the-gaza-humanitarian-catastrophe-and-the-erosion-of-aid-principles",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "The Pathfinder: How A Trump-Appointee Became The Strongest Defender of Tribal Rights in Supreme Court History",
+          "github_path": "/14/Pathfinder/",
+          "prod_title": "The Pathfinder: How A Trump-Appointee Became The Strongest Defender of Tribal Rights in Supreme Court History",
+          "prod_path": "/articles/the-pathfinder-how-a-trump-appointee-became-the-strongest-defender-of-tribal-rights-in-supreme-court-history",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Istanbul or Bust",
+          "github_path": "/14/instanbul/",
+          "prod_title": "Istanbul or Bust",
+          "prod_path": "/articles/istanbul-or-bust",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "The Battle For the Ivory Tower",
+          "github_path": "/14/battle/",
+          "prod_title": "The Battle For the Ivory Tower",
+          "prod_path": "/articles/the-battle-for-the-ivory-tower",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Stand Up! Fighting Illiberalism: Protests in Slovakia and Hungary",
+          "github_path": "/14/revolt/",
+          "prod_title": "Stand Up! Fighting Illiberalism: Protests in Slovakia and Hungary",
+          "prod_path": "/articles/stand-up-fighting-illiberalism-protests-in-slovakia-and-hungary",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "A Whole New World: Argentina's 2025 Elections",
+          "github_path": "/14/Argentina/",
+          "prod_title": "A Whole New World: Argentina's 2025 Elections",
+          "prod_path": "/articles/a-whole-new-world-argentinas-2025-elections",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "The Illusion of Cool: Unmasking Nayib Bukele's Authoritarian Rule in El Salvador (Part 1)",
+          "github_path": "/14/Illusion/",
+          "prod_title": "The Illusion of Cool: Unmasking Nayib Bukele's Authoritarian Rule in El Salvador (Part 1)",
+          "prod_path": "/articles/the-illusion-of-cool-unmasking-nayib-bukeles-authoritarian-rule-in-el-salvador-part-1",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Ruff Considerations",
+          "github_path": "/14/ruff_considerations/",
+          "prod_title": "Ruff Considerations",
+          "prod_path": "/articles/ruff-considerations",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report",
+          "github_path": "/14/eos/",
+          "prod_title": "Executive Order Weekly Report - Week of May 19, 2025",
+          "prod_path": "/articles/executive-order-weekly-report---week-of-may-19-2025",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "XV",
+      "github_path": "/15",
+      "prod_path": "/volumes/15",
+      "note": "Volume XV on pragmaticpapers.com shows NO articles - the articles grid is empty. All 8 GitHub articles are MISSING from prod.",
+      "articles": [
+        {
+          "github_title": "California Screamin'",
+          "github_path": "/15/california-screaming/",
+          "prod_title": null,
+          "prod_path": null,
+          "match_confidence": "missing"
+        },
+        {
+          "github_title": "The Making of a Strongman: Unmasking Nayib Bukele's Authoritarian Rule in El Salvador (Part 2)",
+          "github_path": "/15/bukele/",
+          "prod_title": null,
+          "prod_path": null,
+          "match_confidence": "missing"
+        },
+        {
+          "github_title": "Sleazebag",
+          "github_path": "/15/sleazebag/",
+          "prod_title": null,
+          "prod_path": null,
+          "match_confidence": "missing"
+        },
+        {
+          "github_title": "Ceasefire Visions: Does Hamas Dream of Electric Peace?",
+          "github_path": "/15/hamas/",
+          "prod_title": null,
+          "prod_path": null,
+          "match_confidence": "missing"
+        },
+        {
+          "github_title": "Attack on Science: Trump 2.0 and the NIH",
+          "github_path": "/15/nih/",
+          "prod_title": null,
+          "prod_path": null,
+          "match_confidence": "missing"
+        },
+        {
+          "github_title": "More Than a Woman—And Somehow Less",
+          "github_path": "/15/less-than-a-woman/",
+          "prod_title": null,
+          "prod_path": null,
+          "match_confidence": "missing"
+        },
+        {
+          "github_title": "Ten Years later: The Migration Crisis That Shook Europe",
+          "github_path": "/15/migration-crisis/",
+          "prod_title": null,
+          "prod_path": null,
+          "match_confidence": "missing",
+          "note": "Not the same as 'Migration to the UK: Perception Versus Reality' which is a different article"
+        },
+        {
+          "github_title": "Executive Order Weekly Report - Week of May 26, 2025",
+          "github_path": "/15/eos/",
+          "prod_title": null,
+          "prod_path": null,
+          "match_confidence": "missing"
+        }
+      ]
+    },
+    {
+      "github_volume": "XVI",
+      "github_path": "/16",
+      "prod_path": "/volumes/16",
+      "articles": [
+        {
+          "github_title": "Rising Lion: An Opening Salvo",
+          "github_path": "/16/israel/",
+          "prod_title": null,
+          "prod_path": null,
+          "match_confidence": "missing",
+          "note": "Not found on pragmaticpapers.com"
+        },
+        {
+          "github_title": "The Stage is Yours (Part 3)",
+          "github_path": "/16/bukele/",
+          "prod_title": null,
+          "prod_path": null,
+          "match_confidence": "missing",
+          "note": "Bukele Part 3 not found on pragmaticpapers.com (only Part 1 exists)"
+        },
+        {
+          "github_title": "Seeing What You Want to See: RFK, Vaccines, and the Media Mirror",
+          "github_path": "/16/rfk/",
+          "prod_title": "Seeing What You Want to See: RFK, Vaccines, and the Media Mirror",
+          "prod_path": "/articles/seeing-what-you-want-to-see-rfk-vaccines-and-the-media-mirror",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "New Chapter, Old Wounds: South Korea's Political Crossroads",
+          "github_path": "/16/korea/",
+          "prod_title": "New Chapter, Old Wounds: South Korea's Political Crossroads",
+          "prod_path": "/articles/new-chapter-old-wounds-south-koreas-political-crossroads",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "The many faces of Karol Nawrocki, the new polish president",
+          "github_path": "/16/poland/",
+          "prod_title": "The many faces of Karol Nawrocki, the new polish president",
+          "prod_path": "/articles/the-many-faces-of-karol-nawrocki-the-new-polish-president",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "One Million and Counting",
+          "github_path": "/16/ukraine/",
+          "prod_title": "One Million and Counting",
+          "prod_path": "/articles/one-million-and-counting",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report - Week of June 02, 2025",
+          "github_path": "/16/eos/",
+          "prod_title": "Executive Order Weekly Report - Week of June 02, 2025",
+          "prod_path": "/articles/executive-order-weekly-report---week-of-june-02-2025",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "XVII",
+      "github_path": "/17",
+      "prod_path": "/volumes/17",
+      "articles": [
+        {
+          "github_title": "On the Brink: The Israel-Iran War, U.S. Strikes, and the Future of the Middle East",
+          "github_path": "/17/1iran/",
+          "prod_title": "On the Brink: The Israel-Iran War, U.S. Strikes, and the Future of the Middle East",
+          "prod_path": "/articles/on-the-brink-the-israel-iran-war-us-strikes-and-the-future-of-the-middle-east",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Targeted for Public Service: Minnesota Leaders Caught in Deadly Plot",
+          "github_path": "/17/2minnesota/",
+          "prod_title": "Targeted for Public Service: Minnesota Leaders Caught in Deadly Plot",
+          "prod_path": "/articles/targeted-for-public-service-minnesota-leaders-caught-in-deadly-plot",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "They Want It All: Putin's Open Threats, Trump's Silence, and Why We Can't Give Up",
+          "github_path": "/17/3Ukraine/",
+          "prod_title": "They Want It All: Putin's Open Threats, Trump's Silence, and Why We Can't Give Up",
+          "prod_path": "/articles/they-want-it-all-putins-open-threats-trumps-silence-and-why-we-cant-give-up",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Right to Treatment",
+          "github_path": "/17/4trans/",
+          "prod_title": "Right to Treatment",
+          "prod_path": "/articles/right-to-treatment",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Syria's New Dawn Appears Darkly Authoritarian",
+          "github_path": "/17/5syria/",
+          "prod_title": "Syria's New Dawn Appears Darkly Authoritarian",
+          "prod_path": "/articles/syrias-new-dawn-appears-darkly-authoritarian",
+          "match_confidence": "high"
+        }
+      ]
+    },
+    {
+      "github_volume": "XVIII",
+      "github_path": "/18",
+      "prod_path": "/volumes/18",
+      "articles": [
+        {
+          "github_title": "Unclean Hands, Unchecked Power: Supreme Court Greenlights 'Third Country' Deportations",
+          "github_path": "/18/1Deportations/",
+          "prod_title": "Unclean Hands, Unchecked Power: Supreme Court Greenlights 'Third Country' Deportations",
+          "prod_path": "/articles/unclean-hands-unchecked-power-supreme-court-greenlights-third-country-deportations",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Aid Under Fire - The Collapse of Humanitarian Credibility in Gaza",
+          "github_path": "/18/2israel/",
+          "prod_title": "Aid Under Fire - The Collapse of Humanitarian Credibility in Gaza",
+          "prod_path": "/articles/aid-under-fire---the-collapse-of-humanitarian-credibility-in-gaza",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Unlawful Assemblies and Unfinished Arguments",
+          "github_path": "/18/3PROTESTS/",
+          "prod_title": "Unlawful Assemblies and Unfinished Arguments",
+          "prod_path": "/articles/unlawful-assemblies-and-unfinished-arguments",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Ukraine's War Effort from Kursk to Kostiantynivka (June 22–28)",
+          "github_path": "/18/4Ukraine/",
+          "prod_title": "Ukraine's War Effort from Kursk to Kostiantynivka (June 22–28)",
+          "prod_path": "/articles/-ukraines-war-effort-from-kursk-to-kostiantynivka-june-2228",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Debt Brakes and Austerity: When Fiscal Rules Ignore Returns",
+          "github_path": "/18/5debt/",
+          "prod_title": "Debt Brakes and Austerity: When Fiscal Rules Ignore Returns",
+          "prod_path": "/articles/debt-brakes-and-austerity-when-fiscal-rules-ignore-returns",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report - Week of June 09, 2025",
+          "github_path": "/18/6eos1/",
+          "prod_title": "Executive Order Weekly Report - Week of June 09, 2025",
+          "prod_path": "/articles/executive-order-weekly-report---week-of-june-09-2025",
+          "match_confidence": "high"
+        },
+        {
+          "github_title": "Executive Order Weekly Report - Week of June 16, 2025",
+          "github_path": "/18/7eos2/",
+          "prod_title": "Executive Order Weekly Report - Week of June 16, 2025",
+          "prod_path": "/articles/executive-order-weekly-report---week-of-june-16-2025",
+          "match_confidence": "high"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_github_volumes": 18,
+    "total_github_volumes_with_articles": 17,
+    "total_github_articles": 113,
+    "matched_articles": 101,
+    "missing_from_prod": 11,
+    "missing_articles": [
+      "Vol II: Trump's tariffs (/02/trumps-tariff-troubles/)",
+      "Vol XV: California Screamin' (/15/california-screaming/)",
+      "Vol XV: The Making of a Strongman: Bukele Part 2 (/15/bukele/)",
+      "Vol XV: Sleazebag (/15/sleazebag/)",
+      "Vol XV: Ceasefire Visions: Does Hamas Dream of Electric Peace? (/15/hamas/)",
+      "Vol XV: Attack on Science: Trump 2.0 and the NIH (/15/nih/)",
+      "Vol XV: More Than a Woman—And Somehow Less (/15/less-than-a-woman/)",
+      "Vol XV: Ten Years later: The Migration Crisis That Shook Europe (/15/migration-crisis/)",
+      "Vol XV: Executive Order Weekly Report - Week of May 26, 2025 (/15/eos/)",
+      "Vol XVI: Rising Lion: An Opening Salvo (/16/israel/)",
+      "Vol XVI: The Stage is Yours (Part 3) (/16/bukele/)"
+    ],
+    "note_on_volume_1": "Volume I links to a Reddit post, not a GitHub Pages volume"
+  }
+}
